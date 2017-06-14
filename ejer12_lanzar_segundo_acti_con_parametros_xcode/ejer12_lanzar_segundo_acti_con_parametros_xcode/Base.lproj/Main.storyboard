@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ejer12_lanzar_segundo_acti_con_parametros_xcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type text" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AiP-tc-9ek">
+                                <rect key="frame" x="44" y="61" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98114771570000003" green="0.37049172190000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jCc-JY-7YA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="uno" id="J8k-gF-nBn">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="biV-Qc-2mo">
+                                            <connections>
+                                                <action selector="pulsado:" destination="BYZ-38-t0r" id="qKF-2G-WzG"/>
+                                                <segue destination="q80-h0-TfJ" kind="show" identifier="identificador" id="j43-eb-I8e"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="edittext" destination="AiP-tc-9ek" id="peS-r5-UiA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="81"/>
+        </scene>
+        <!--Dos-->
+        <scene sceneID="kqK-8h-0pb">
+            <objects>
+                <viewController id="q80-h0-TfJ" customClass="dos" customModule="ejer12_lanzar_segundo_acti_con_parametros_xcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u9A-L7-tnr"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Vx-v9-MpY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jEM-2J-Fvv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezm-9P-hcS">
+                                <rect key="frame" x="32" y="174" width="318" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WBS-0G-O7x">
+                                <rect key="frame" x="4" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="dos" id="C74-mw-yWU">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="q4y-9V-phy">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="46x-3q-KJu"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ezm-9P-hcS" firstAttribute="top" secondItem="u9A-L7-tnr" secondAttribute="bottom" constant="154" id="GMp-Yf-4hl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ezm-9P-hcS" secondAttribute="trailing" constant="9" id="Qjt-cp-3FJ"/>
+                            <constraint firstItem="ezm-9P-hcS" firstAttribute="leading" secondItem="jEM-2J-Fvv" secondAttribute="leadingMargin" constant="16" id="Z8f-HJ-MOU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="ezm-9P-hcS" id="Ac3-ZZ-wXe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9o-lV-6nw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1022" y="73"/>
+        </scene>
+    </scenes>
+</document>
